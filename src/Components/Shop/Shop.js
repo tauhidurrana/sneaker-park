@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
 import Cart from '../Cart/Cart';
 import './Shop.css';
+import Footer from '../Footer/Footer';
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
@@ -54,8 +55,10 @@ const Shop = () => {
                         </button>
                         <p>{items.name}</p>
                     </div>
+
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };

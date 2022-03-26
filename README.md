@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Sneaker Park BD
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live link of this project: [sneaker park bd](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

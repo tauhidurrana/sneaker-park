@@ -33,12 +33,18 @@ const Shop = () => {
                 <h2>Product Summary</h2>
                 <p>Selected Items: {cart.length}</p>
                 <div>
+                    <h2>Item Name: </h2>
                     {
-        
-                        cart.map(item=><Cart item={item}></Cart>)
-                        
+                        cart.map(item=><Cart item={item}
+                        key={item.id}
+                        ></Cart>)
                     }
-
+                    <div>
+                        <h2>Select Random one</h2>
+                        <button className='random-btn'>
+                            <h5>Select</h5>
+                        </button>
+                    </div>
                 </div>
             </div>
 

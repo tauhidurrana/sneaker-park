@@ -22,3 +22,10 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+.cart-container .random-btn{
+    background-color: #FFE0B3;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+}

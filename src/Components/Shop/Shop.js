@@ -6,6 +6,14 @@ import './Shop.css';
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
+    const [items, setItems] = useState([]);
+
+    const getRandomItem = () =>{
+        const randomIndex = Math.floor(Math.random() * cart.length);
+        const item = cart[randomIndex];
+        setItems(item);
+    }
+    console.log(items);
 
     const handleAddToCart = (product) =>{
         console.log(product);
@@ -41,14 +49,13 @@ const Shop = () => {
                     }
                     <div>
                         <h2>Select Random one</h2>
-                        <button className='random-btn'>
-                            <h5>Select</h5>
+                        <button onClick={getRandomItem} className='random-btn'>
+                            <h3>Select</h3>
                         </button>
+                        <p>{items.name}</p>
                     </div>
                 </div>
             </div>
-
-            
         </div>
     );
 };

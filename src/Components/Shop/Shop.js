@@ -9,6 +9,8 @@ const Shop = () => {
 
     const handleAddToCart = (product) =>{
         console.log(product);
+        const newCart = [...cart, product];
+        setCart(newCart);
     }
 
     useEffect(()=>{
@@ -29,7 +31,18 @@ const Shop = () => {
             </div>
             <div className='cart-container'>
                 <h2>Product Summary</h2>
+                <p>Selected Items: {cart.length}</p>
+                <div>
+                    {
+        
+                        cart.map(item=><Cart item={item}></Cart>)
+                        
+                    }
+
+                </div>
             </div>
+
+            
         </div>
     );
 };

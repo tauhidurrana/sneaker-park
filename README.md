@@ -1,6 +1,6 @@
 # Sneaker Park BD
 
-Live link of this project: [sneaker park bd](https://github.com/facebook/create-react-app).
+Live link site of this project: [sneaker park bd](https://sneaker-park-bd-tauhidurrana.netlify.app/).
 
 ## Available Scripts
 
